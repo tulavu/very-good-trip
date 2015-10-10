@@ -13,13 +13,15 @@ angular
 
         }
     ])
-    .controller('LoginController', ['$scope',
-        function($scope) {
+    .controller('LoginController', ['$scope', '$location',
+        function($scope, $location) {
           console.log('url : /login');
           //$location.path('/spontane/choix-humeur');
 
           $scope.validate = function(login, password) {
             console.log('login = ' + login + ', password = ' + password);
+            $location.path('/spontane/choix-humeur');
+
           };
         }
     ])
@@ -41,7 +43,7 @@ angular
           console.log('url : /choix-humeur');
           console.log('niveauHumeur = ' + $scope.niveauHumeur);
 
-          
+
           // cablage choix-defi ou attente-defi-confirmee
         }
     ])

@@ -1,10 +1,8 @@
 <div id="home">
- <video width="384" height="362" autoplay loop>
-   <source src="img/videos/video.mp4" type="video/mp4" />
- </video>
+ <img width="384" height="362" src="img/videos/video.gif" style="margin-top:-30px;margin-left:-15px"/>
 </div>
 <div id="login-content" class="form-group">
-  <div>
+  <div><br/>
     <label for="login">Identifiant</label>
     <input ng-model="login" type="text" name="login" class="form-control"/>
   </div>
@@ -13,6 +11,6 @@
     <label for="password">Mot de passe</label>
     <input ng-model="password" type="password" name="password" class="form-control"/>
   </div>
-
+  <br/>
   <input type="button" ng-click="validate(login, password)" value="C'est parti !" class="btn btn-success btn-lg btn-block">
 </div>
