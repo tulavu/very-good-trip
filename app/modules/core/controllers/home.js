@@ -35,6 +35,8 @@ angular
         function($scope) {
           console.log('url : /choix-humeur');
           console.log('niveauHumeur = ' + $scope.niveauHumeur);
+
+          // cablage choix-defi ou attente-defi-confirmee
         }
     ])
     .controller('ChoixDefiController', ['$scope',
@@ -50,5 +52,10 @@ angular
     .controller('ConfirmationDefiController', ['$scope',
         function($scope) {
           console.log('url : /confirmation-defi');
+        }
+    ])
+    .controller('AttenteDefiConfirmeeController', ['$scope',
+        function($scope) {
+          console.log('url : /attente-defi-confirmee');
         }
     ]);
