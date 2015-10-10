@@ -5,10 +5,10 @@ $(function() {
       $el = $( this );
 
     function swipeInfo( event ) {
-      var x = (!event.originalEvent.pageX ? event.originalEvent.touches[0].pageX : event.originalEvent.pageX),
-        y = (!event.originalEvent.pageY ? event.originalEvent.touches[0].pageY : event.originalEvent.pageY),
+      var x = (!event.originalEvent.pageX ? event.originalEvent.targetTouches[0].pageX : event.originalEvent.pageX),
+        y = (!event.originalEvent.pageY ? event.originalEvent.targetTouches[0].pageY : event.originalEvent.pageY),
         dx, dy;
-        console.log(y);
+        //onsole.log(y);
       dx = ( x > originalPosition.x ) ? "right" : "left";
       dy = ( y > originalPosition.y ) ? "down" : "up";
 
@@ -24,18 +24,12 @@ $(function() {
       };
     }
 
-    var flag = false;
-
     $el.on( "touchstart mousedown", function ( event ) {
-      if (!flag) {
-        flag = true;
-        setTimeout(function(){ flag = false; }, 100);
-        // do something
-      }
+
       touchDown = true;
       originalPosition = {
-        x : (!event.originalEvent.pageX ? event.originalEvent.touches[0].pageX : event.originalEvent.pageX),
-        y : (!event.originalEvent.pageY ? event.originalEvent.touches[0].pageY : event.originalEvent.pageY)
+        x : (!event.originalEvent.pageX ? event.originalEvent.targetTouches[0].pageX : event.originalEvent.pageX),
+        y : (!event.originalEvent.pageY ? event.originalEvent.targetTouches[0].pageY : event.originalEvent.pageY)
       };
     } );
 

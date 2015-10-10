@@ -1,0 +1,28 @@
+{
+    "cordova-plugin-whitelist": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-whitelist@1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "org.apache.cordova.dialogs": {
+        "source": {
+            "type": "local",
+            "path": "/home/morgan/.plugman/cache/org.apache.cordova.dialogs/0.3.0/package"
+        }
+    },
+    "org.apache.cordova.geolocation": {
+        "source": {
+            "type": "local",
+            "path": "/home/morgan/.plugman/cache/org.apache.cordova.geolocation/0.3.12/package"
+        }
+    },
+    "org.apache.cordova.splashscreen": {
+        "source": {
+            "type": "local",
+            "path": "/home/morgan/.plugman/cache/org.apache.cordova.splashscreen/1.0.0/package"
+        }
+    }
+}

@@ -3,6 +3,8 @@ body {
     -webkit-transition: opacity 1s ease;
     -moz-transition: opacity 1s ease;
     transition: opacity 1s;
+    margin:0;
+    padding:0;
 }
 
 .ng-cloak {
