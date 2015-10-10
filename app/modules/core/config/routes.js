@@ -40,6 +40,19 @@ angular
                     url: '/choix-mode',
                     templateUrl: 'modules/core/views/choixMode.html',
                     controller: 'ChoixModeController'
+                })
+
+                // spontané
+                .state('spontane', {
+                    abstract: true,
+                    url: '/spontane',
+                    template: '<ui-view/>'
+                })
+                .state('spontane.choixHumeur', {
+                    parent: 'spontane',
+                    url: '/choix-humeur',
+                    templateUrl: 'modules/core/views/choixHumeur.html',
+                    controller: 'ChoixHumeurController'
                 });
         }
     ]);

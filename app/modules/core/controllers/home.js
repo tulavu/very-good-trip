@@ -24,4 +24,10 @@ angular
           console.log("url : /choix-mode");
 
         }
+    ])
+    .controller('ChoixHumeurController', ['$scope',
+        function($scope) {
+          console.log("url : /choix-humeur");
+
+        }
     ]);
