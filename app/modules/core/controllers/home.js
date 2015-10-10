@@ -25,9 +25,20 @@ angular
 
         }
     ])
+    .controller('SpontaneController', ['$scope',
+        function($scope) {
+          console.log("controller : spontane");
+          console.log("niveauHumeur = " + $scope.niveauHumeur);
+        }
+    ])
     .controller('ChoixHumeurController', ['$scope',
         function($scope) {
           console.log("url : /choix-humeur");
-
+          console.log("niveauHumeur = " + $scope.niveauHumeur);
+        }
+    ])
+    .controller('ChoixDefiController', ['$scope',
+        function($scope) {
+          console.log("url : /choix-defi");
         }
     ]);

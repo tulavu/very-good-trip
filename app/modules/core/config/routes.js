@@ -46,13 +46,20 @@ angular
                 .state('spontane', {
                     abstract: true,
                     url: '/spontane',
-                    template: '<ui-view/>'
+                    template: '<ui-view/>',
+                    controller: 'SpontaneController'
                 })
                 .state('spontane.choixHumeur', {
                     parent: 'spontane',
                     url: '/choix-humeur',
                     templateUrl: 'modules/core/views/choixHumeur.html',
                     controller: 'ChoixHumeurController'
+                })
+                .state('spontane.choixDefi', {
+                    parent: 'spontane',
+                    url: '/choix-defi',
+                    templateUrl: 'modules/core/views/choixDefi.html',
+                    controller: 'ChoixDefiController'
                 });
         }
     ]);
