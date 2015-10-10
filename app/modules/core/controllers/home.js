@@ -13,15 +13,18 @@ angular
 
         }
     ])
-    .controller('LoginController', ['$scope', '$location',
-        function($scope, $location) {
+    .controller('LoginController', ['$scope', '$location','$timeout',
+        function($scope, $location, $timeout) {
           console.log('url : /login');
           //$location.path('/spontane/choix-humeur');
 
           $scope.validate = function(login, password) {
             console.log('login = ' + login + ', password = ' + password);
-            $location.path('/spontane/choix-humeur');
-
+            $("#loading-overlay").css('display','block');
+            $timeout(function(){
+              $location.path('/spontane/choix-humeur');
+              $("#loading-overlay").css('display','none');
+            },2000)
           };
         }
     ])

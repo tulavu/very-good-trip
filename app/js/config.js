@@ -6,17 +6,17 @@ var ApplicationConfiguration = (function() {
     var applicationModuleName = 'angularjsapp';
     var applicationModuleVendorDependencies = [
         'ngResource',
-        
-        'ngCookies', 
-        
-        'ngAnimate', 
-        
-        'ngTouch', 
-        
-        'ngSanitize', 
+
+        'ngCookies',
+
+        'ngAnimate',
+
+        'ngTouch',
+
+        'ngSanitize',
         'ui.router',
         'ui.bootstrap',
-        'ui.utils'
+        'ui.utils',
     ];
 
     // Add a new vertical module
