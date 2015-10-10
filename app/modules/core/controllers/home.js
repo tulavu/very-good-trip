@@ -13,10 +13,14 @@ angular
 
         }
     ])
-    .controller('LoginController', ['$scope','$location',
-        function($scope, $location) {
+    .controller('LoginController', ['$scope',
+        function($scope) {
           console.log('url : /login');
-          $location.path('/spontane/choix-humeur');
+          //$location.path('/spontane/choix-humeur');
+
+          $scope.validate = function(login, password) {
+            console.log('login = ' + login + ', password = ' + password);
+          };
         }
     ])
     // Décablé pour l'instant

@@ -4,3 +4,16 @@
 <p id="login-content">
     Login
 </p>
+<div id="login-content" class="form-group">
+  <div>
+    <label for="login">Identifiant</label>
+    <input ng-model="login" type="text" name="login" class="form-control"/>
+  </div>
+
+  <div>
+    <label for="password">Mot de passe</label>
+    <input ng-model="password" type="password" name="password" class="form-control"/>
+  </div>
+
+  <input type="button" ng-click="validate(login, password)" value="C'est parti !" class="btn btn-success btn-lg btn-block">
+</div>
