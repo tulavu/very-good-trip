@@ -28,17 +28,17 @@ angular
             $stateProvider
                 .state('home', {
                     url: '/',
-                    templateUrl: 'modules/core/views/home.html',
+                    templateUrl: 'modules/core/views/0-home.html',
                     controller: 'HomeController'
                 })
                 .state('login', {
                     url: '/login',
-                    templateUrl: 'modules/core/views/login.html',
+                    templateUrl: 'modules/core/views/1-login.html',
                     controller: 'LoginController'
                 })
                 .state('choixMode', {
                     url: '/choix-mode',
-                    templateUrl: 'modules/core/views/choixMode.html',
+                    templateUrl: 'modules/core/views/2-choixMode.html',
                     controller: 'ChoixModeController'
                 })
 
@@ -52,13 +52,13 @@ angular
                 .state('spontane.choixHumeur', {
                     parent: 'spontane',
                     url: '/choix-humeur',
-                    templateUrl: 'modules/core/views/choixHumeur.html',
+                    templateUrl: 'modules/core/views/3-choixHumeur.html',
                     controller: 'ChoixHumeurController'
                 })
                 .state('spontane.choixDefi', {
                     parent: 'spontane',
                     url: '/choix-defi',
-                    templateUrl: 'modules/core/views/choixDefi.html',
+                    templateUrl: 'modules/core/views/4-choixDefi.html',
                     controller: 'ChoixDefiController'
                 });
         }
