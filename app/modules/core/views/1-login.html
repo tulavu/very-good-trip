@@ -1,6 +1,18 @@
-<div class="page-header">
-    <h1 id="login-h1">Login</h1>
+<div id="home">
+ <video width="384" height="362" autoplay loop>
+   <source src="img/videos/video.mp4" type="video/mp4" />
+ </video>
 </div>
-<p id="login-content">
-    Login
-</p>
+<div id="login-content" class="form-group">
+  <div>
+    <label for="login">Identifiant</label>
+    <input ng-model="login" type="text" name="login" class="form-control"/>
+  </div>
+
+  <div>
+    <label for="password">Mot de passe</label>
+    <input ng-model="password" type="password" name="password" class="form-control"/>
+  </div>
+
+  <input type="button" ng-click="validate(login, password)" value="C'est parti !" class="btn btn-success btn-lg btn-block">
+</div>

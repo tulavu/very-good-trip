@@ -1,0 +1,78 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a.bouton {
+  display:inline-block;
+  padding:10px 40px;
+  text-decoration: none;
+  color:#fff;
+  background:#eb3989;
+  border-radius:8px;
+
+}
+
+
+#choixDefi {
+  width:384px;
+  background:#fff;
+  overflow:hidden;
+  padding-bottom:100px;
+}
+
+#choixDefi ul {
+  margin:0;
+  padding:0;
+}
+
+#choixDefi ul li {
+    list-style-type: none;
+}
+
+#choixDefi ul li a {
+  width:50%;
+  float:left;
+  background-position: top center;
+  background-repeat:no-repeat;
+  padding-top:160px;
+  text-align:center;
+  margin-top:10px;
+  margin-bottom:20px;
+  text-decoration:none;
+  color:#000
+}
+
+#choixDefi ul li.premier a {
+  background-image: url(../img/icon-chante.png);
+}
+
+#choixDefi ul li.second a {
+  background-image: url(../img/icon-danse.png);
+}
+
+#choixDefi ul li.troisieme a {
+  background-image: url(../img/icon-flashmob.png);
+}
+
+#choixDefi ul li.quatrieme a{
+  background-image: url(../img/icon-grimace.png);
+}
+
+#choixDefi ul li.cinquieme a {
+  background-image: url(../img/icon-haka.png);
+}
+
+#choixDefi ul li.sixieme a {
+  background-image: url(../img/icon-hola.png);
+}
+
+
+#bottomBar {
+  position:fixed;
+  bottom:0;
+  height:71px;
+  background:#fff;
+  width:100%;
+  text-align:center;
+  padding-top:29px;
+}
