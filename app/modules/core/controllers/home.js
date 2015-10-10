@@ -16,9 +16,10 @@ angular
     .controller('LoginController', ['$scope','$location',
         function($scope, $location) {
           console.log('url : /login');
-          $location.path('/choix-mode');
+          $location.path('/spontane/choix-humeur');
         }
     ])
+    // Décablé pour l'instant
     .controller('ChoixModeController', ['$scope',
         function($scope) {
           console.log('url : /choix-mode');
