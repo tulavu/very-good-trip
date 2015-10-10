@@ -9,7 +9,7 @@ node_modules/
 /docs/
 
 ##########Platforms##########
-platforms/android/
+platforms/
 
 ##########iOS##########
 platforms/ios/cordova/console.log
