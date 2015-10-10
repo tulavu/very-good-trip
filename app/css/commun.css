@@ -43,19 +43,19 @@ a.bouton {
 }
 
 #choixDefi ul li.premier a {
-  background-image: url(../img/icon-chante.png);
+  background-image: url('img/icon-chante.png');
 }
 
 #choixDefi ul li.second a {
-  background-image: url(../img/icon-danse.png);
+  background-image: url('img/icon-danse.png');
 }
 
 #choixDefi ul li.troisieme a {
-  background-image: url(../img/icon-flashmob.png);
+  background-image: url('img/icon-flashmob.png');
 }
 
 #choixDefi ul li.quatrieme a{
-  background-image: url(../img/icon-grimace.png);
+  background-image: url('img/icon-grimace.png');
 }
 
 #choixDefi ul li.cinquieme a {
