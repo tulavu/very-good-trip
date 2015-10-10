@@ -15,40 +15,40 @@ angular
     ])
     .controller('LoginController', ['$scope','$location',
         function($scope, $location) {
-          console.log("url : /login");
+          console.log('url : /login');
           $location.path('/choix-mode');
         }
     ])
     .controller('ChoixModeController', ['$scope',
         function($scope) {
-          console.log("url : /choix-mode");
+          console.log('url : /choix-mode');
 
         }
     ])
     .controller('SpontaneController', ['$scope',
         function($scope) {
-          console.log("controller : spontane");
-          console.log("niveauHumeur = " + $scope.niveauHumeur);
+          console.log('controller : spontane');
+          console.log('niveauHumeur = ' + $scope.niveauHumeur);
         }
     ])
     .controller('ChoixHumeurController', ['$scope',
         function($scope) {
-          console.log("url : /choix-humeur");
-          console.log("niveauHumeur = " + $scope.niveauHumeur);
+          console.log('url : /choix-humeur');
+          console.log('niveauHumeur = ' + $scope.niveauHumeur);
         }
     ])
     .controller('ChoixDefiController', ['$scope',
         function($scope) {
-          console.log("url : /choix-defi");
+          console.log('url : /choix-defi');
         }
     ])
     .controller('DetailsDefiController', ['$scope',
         function($scope) {
-          console.log("url : /details-defi");
+          console.log('url : /details-defi');
         }
     ])
     .controller('ConfirmationDefiController', ['$scope',
         function($scope) {
-          console.log("url : /confirmation-defi");
+          console.log('url : /confirmation-defi');
         }
     ]);
