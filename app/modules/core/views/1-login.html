@@ -1,7 +1,7 @@
 <div id="home">
- <img width="384" height="362" src="img/videos/video.gif" style="margin-top:-30px;margin-left:-15px"/>
+ <img width="384" height="362" src="img/videos/video.gif" style="margin-top:-30px;margin-left:0px"/>
 </div>
-<div id="login-content" class="form-group">
+<div id="login-content" class="form-group container" >
   <div><br/>
     <label for="login">Identifiant</label>
     <input ng-model="login" type="text" name="login" class="form-control"/>
@@ -12,5 +12,5 @@
     <input ng-model="password" type="password" name="password" class="form-control"/>
   </div>
   <br/>
-  <input type="button" ng-click="validate(login, password)" value="C'est parti !" class="btn btn-success btn-lg btn-block">
+  <input type="button" ng-click="validate(login, password)" value="C'est parti !" class="btn btn-success btn-lg btn-block" style="background-color:#EB3989;">
 </div>
