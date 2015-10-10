@@ -72,6 +72,12 @@ angular
                     url: '/confirmation-defi',
                     templateUrl: 'modules/core/views/6-confirmationDefi.html',
                     controller: 'ConfirmationDefiController'
+                })
+                .state('spontane.attenteDefiConfirmee', {
+                    parent: 'spontane',
+                    url: '/attente-defi-confirmee',
+                    templateUrl: 'modules/core/views/7-attenteDefiConfirmee.html',
+                    controller: 'AttenteDefiConfirmeeController'
                 });
         }
     ]);
