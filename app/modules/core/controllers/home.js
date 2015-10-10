@@ -12,4 +12,9 @@ angular
         function($scope) {
 
         }
+    ])
+    .controller('LoginController', ['$scope',
+        function($scope) {
+          console.log("url : /login");
+        }
     ]);

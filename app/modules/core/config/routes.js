@@ -30,6 +30,11 @@ angular
                     url: '/',
                     templateUrl: 'modules/core/views/home.html',
                     controller: 'HomeController'
+                })
+                .state('login', {
+                    url: '/login',
+                    templateUrl: 'modules/core/views/login.html',
+                    controller: 'LoginController'
                 });
         }
     ]);
