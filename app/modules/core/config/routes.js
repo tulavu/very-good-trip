@@ -35,6 +35,11 @@ angular
                     url: '/login',
                     templateUrl: 'modules/core/views/login.html',
                     controller: 'LoginController'
+                })
+                .state('choixMode', {
+                    url: '/choix-mode',
+                    templateUrl: 'modules/core/views/choixMode.html',
+                    controller: 'ChoixModeController'
                 });
         }
     ]);

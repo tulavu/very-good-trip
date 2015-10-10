@@ -13,8 +13,15 @@ angular
 
         }
     ])
-    .controller('LoginController', ['$scope',
-        function($scope) {
+    .controller('LoginController', ['$scope','$location',
+        function($scope, $location) {
           console.log("url : /login");
+          $location.path('/choix-mode');
+        }
+    ])
+    .controller('ChoixModeController', ['$scope',
+        function($scope) {
+          console.log("url : /choix-mode");
+
         }
     ]);
