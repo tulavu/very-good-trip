@@ -19,9 +19,9 @@
     decalage = null;
     offsetSave = null;
     $("#smiley").swipe(function(direction, offset){
-
+      //console.log('toto');
       decalageCourant = ((offset.y-offset.y%pas)/pas);
-
+      //console.log(offset.y);
       if (decalage == null || decalage != decalageCourant){
 
         decalage = decalageCourant;
