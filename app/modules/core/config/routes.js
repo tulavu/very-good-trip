@@ -60,6 +60,24 @@ angular
                     url: '/choix-defi',
                     templateUrl: 'modules/core/views/4-choixDefi.html',
                     controller: 'ChoixDefiController'
+                })
+                .state('spontane.detailsDefi', {
+                    parent: 'spontane',
+                    url: '/details-defi',
+                    templateUrl: 'modules/core/views/5-detailsDefi.html',
+                    controller: 'DetailsDefiController'
+                })
+                .state('spontane.confirmationDefi', {
+                    parent: 'spontane',
+                    url: '/confirmation-defi',
+                    templateUrl: 'modules/core/views/6-confirmationDefi.html',
+                    controller: 'ConfirmationDefiController'
+                })
+                .state('spontane.attenteDefiConfirmee', {
+                    parent: 'spontane',
+                    url: '/attente-defi-confirmee',
+                    templateUrl: 'modules/core/views/7-attenteDefiConfirmee.html',
+                    controller: 'AttenteDefiConfirmeeController'
                 });
         }
     ]);
