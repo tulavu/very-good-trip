@@ -66,6 +66,12 @@ angular
                     url: '/details-defi',
                     templateUrl: 'modules/core/views/5-detailsDefi.html',
                     controller: 'DetailsDefiController'
+                })
+                .state('spontane.confirmationDefi', {
+                    parent: 'spontane',
+                    url: '/confirmation-defi',
+                    templateUrl: 'modules/core/views/6-confirmationDefi.html',
+                    controller: 'ConfirmationDefiController'
                 });
         }
     ]);
