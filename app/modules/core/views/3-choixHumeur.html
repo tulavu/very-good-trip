@@ -1,6 +1,51 @@
-<script src="js/swipe.js"></script>
+<p style="text-align:center;width:100%;height:20px;" id="humeur">Neutre</p>
 <div style="background:url('img/smileys/smiley04.png') center center no-repeat;width:100%; height:450px;" id="smiley">
 </div>
-<p style="text-align:center">
-<a ng-href="#!/spontane/choix-defi"><img src="img/boutons/play.png" width="64" height="64"/></a>
-</p>
+<a ng-href="#!/spontane/choix-defi">Go to choix defi !</a>
+
+<script>
+  var humeurs = new Array(8);
+  humeurs[0]='Hilare';
+  humeurs[1]='Joyeux';
+  humeurs[2]='Souriant';
+  humeurs[3]='Neutre';
+  humeurs[4]='Triste';
+  humeurs[5]='Mélancolique';
+  humeurs[6]='Déprimé';
+  humeurs[7]='Suicidaire';
+  $(document).ready(function(){
+    var i = 4;
+    var pas = 50;
+    var decalage = null;
+    var offsetSave = null;
+    $("#smiley").swipe(function(direction, offset){
+      //console.log('toto');
+      var decalageCourant = ((offset.y-offset.y%pas)/pas);
+      //console.log(offset.y);
+      if (decalage == null || decalage != decalageCourant){
+
+        decalage = decalageCourant;
+        var change = false;
+        if (offset.y > offsetSave){
+          if (i<8){
+            i++;
+            //console.log('indice '+i);
+            change = true;
+          }
+        } else if (offset.y < offsetSave){
+          if (i>1){
+            i--;
+            //console.log('indice '+i);
+            change = true;
+          }
+        }
+        if (change && i>0 && i<9){
+          $("#smiley").css('background-image', "url('img/smileys/smiley0"+(9-i)+".png')");
+          $("#humeur").text(humeurs[9-(i-1)]);
+        }
+      }
+      offsetSave = offset.y;
+    })
+  })
+
+</script>
