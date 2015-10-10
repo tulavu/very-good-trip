@@ -1,18 +1,12 @@
-<p style="text-align:center;width:100%;height:20px;" id="humeur">Neutre</p>
+<p style="font-size:2em;text-align:center">Choisissez votre <br/>humeur du jour</p>
 <div style="background:url('img/smileys/smiley04.png') center center no-repeat;width:100%; height:450px;" id="smiley">
 </div>
-<a ng-href="#!/spontane/choix-defi">Go to choix defi !</a>
+<p style="text-align:center" id="detailsDefi-content">
+  <a ng-href="#!/spontane/choix-defi"><img src="img/boutons/play.png" width="64" height="64"/></a>
+</p>
 
 <script>
-  var humeurs = new Array(8);
-  humeurs[0]='Hilare';
-  humeurs[1]='Joyeux';
-  humeurs[2]='Souriant';
-  humeurs[3]='Neutre';
-  humeurs[4]='Triste';
-  humeurs[5]='Mélancolique';
-  humeurs[6]='Déprimé';
-  humeurs[7]='Suicidaire';
+
   $(document).ready(function(){
     var i = 4;
     var pas = 50;
