@@ -60,6 +60,12 @@ angular
                     url: '/choix-defi',
                     templateUrl: 'modules/core/views/4-choixDefi.html',
                     controller: 'ChoixDefiController'
+                })
+                .state('spontane.detailsDefi', {
+                    parent: 'spontane',
+                    url: '/details-defi',
+                    templateUrl: 'modules/core/views/5-detailsDefi.html',
+                    controller: 'DetailsDefiController'
                 });
         }
     ]);

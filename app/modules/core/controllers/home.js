@@ -41,4 +41,9 @@ angular
         function($scope) {
           console.log("url : /choix-defi");
         }
+    ])
+    .controller('DetailsDefiController', ['$scope',
+        function($scope) {
+          console.log("url : /details-defi");
+        }
     ]);
