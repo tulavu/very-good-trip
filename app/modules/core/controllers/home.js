@@ -55,15 +55,30 @@ angular
           console.log('url : /choix-defi');
         }
     ])
-    .controller('DetailsDefiController', ['$scope',
-        function($scope) {
+    .controller('DetailsDefiController', ['$scope','$timeout', '$location',
+        function($scope, $timeout, $location) {
           console.log('url : /details-defi');
+
+          $scope.godefi = function(){
+          $("#loading-overlay").css('display','block');
+          $timeout(function(){
+            $location.path('/spontane/confirmation-defi');
+            $("#loading-overlay").css('display','none');
+          },2000)
+        }
         }
     ])
-    .controller('ConfirmationDefiController', ['$scope',
-        function($scope) {
+    .controller('ConfirmationDefiController', ['$scope', '$timeout',
+        function($scope, $timeout) {
           console.log('url : /confirmation-defi');
 
+          $scope.popup = function(){
+          $timeout(function(){
+
+            $("#loading-overlay").css('display','block');
+            $("#popup").css('display','block');
+          },2000)
+        }
         }
     ])
     .controller('AttenteDefiConfirmeeController', ['$scope',
